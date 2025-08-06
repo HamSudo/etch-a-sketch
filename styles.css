@@ -13,7 +13,7 @@
     border: 8px solid black;
     height: 960px;
     width: 960px;
-
+    
 }
 
 /* .squared {
@@ -21,9 +21,9 @@
     border: 1px solid red;
 } */
 
-.hover {
+/* .hover {
     background-color: blue;
-}
+} */
 
 button {
     display: block;

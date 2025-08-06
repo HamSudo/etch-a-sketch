@@ -17,10 +17,17 @@ function generateGrid (dimension = 16) {
         square.setAttribute("class", "squared");
         square.style.width = `${960/dimension}px`;
         square.style.height = `${960/dimension}px`;
-        square.addEventListener("mouseover", (e) => e.target.classList.add('hover'));
+        square.addEventListener("mouseover", (e) => e.target.style.backgroundColor = getRandomRGB());
         container.appendChild(square);
     }
 
+}
+
+function getRandomRGB () {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    return `rgb(${r}, ${g}, ${b})`;
 }
 
 const container = document.querySelector("#container");
